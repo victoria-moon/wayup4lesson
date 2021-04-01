@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans&family=Ubuntu:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>4 урок домашняя работа</title>
 </head>
@@ -16,10 +17,10 @@
 <body>
     <header class="header">
         <div class="container">
-            <img src="img/logo.png" alt="WayUp">
+            <img src="img/logo.png" alt="WayUp" class="animate__animated animate__swing">
             <div class="wrapper">
                 <!--обертка -->
-                <div class="offer">
+                <div class="offer animate__animated animate__flipInX">
                     <h1 class="header__title">
                         С помощью верстки я создам ту жизнь, о которой <span>мечтаю!</span>
                     </h1>
@@ -27,7 +28,7 @@
                         Мои стремления + настойчивость позволят мне достичь чего угодно. Я не верю в это. Я знаю это на
                         100%. Меня не остановить!
                     </p>
-                    <a href="#" class="btn">Двигаться к мечте!</a>
+                    <a href="#" class="btn" id="btn">Двигаться к мечте!</a>
                 </div>
                 <img class="travel" src="img/travel.png" alt="travel">
             </div>
@@ -35,19 +36,19 @@
     </header>
     <section class="future">
         <div class="container">
-            <h2 class="section__title">Что меня ждет впереди</h2>
+            <h2 class="section__title animate__animated">Что меня ждет впереди</h2>
             <div class="advantages">
-                <div class="advantage time">
+                <div class="advantage time animate__animated">
                     <h3 class="advantage__title">Свободное время</h3>
                     <p class="advantage__text">Мне нужно свободное время на семью и самое настоящее</p>
 
                 </div>
-                <div class="advantage tree">
+                <div class="advantage tree animate__animated">
                     <h3 class="advantage__title">Яркие путешествия</h3>
                     <p class="advantage__text">Работать откуда угодно-что может <br> быть лучше?</p>
 
                 </div>
-                <div class="advantage racket">
+                <div class="advantage racket animate__animated">
                     <h3 class="advantage__title">Создание ценности</h3>
                     <p class="advantage__text">Нет ничего сильнее, чем жить не просто так, создавая ценность</p>
 
@@ -75,6 +76,9 @@
             </p>
         </div>
     </footer>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
